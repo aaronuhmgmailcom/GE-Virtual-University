@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8E7E62A-B078-4FB4-9721-8502885D86E1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GE.MyLearning.BL.Interface</RootNamespace>
+    <AssemblyName>GE.MyLearning.BL.Interface</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="aspNetEmail, Version=3.5.2.0, Culture=neutral, PublicKeyToken=bc571e8da1c1f543">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GE.MyLearning.Web\bin\aspNetEmail.dll</HintPath>
+    </Reference>
+    <Reference Include="GE.MyLearning.BL, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GE.MyLearning.DL.SqlClient\bin\Debug\GE.MyLearning.BL.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.4.369, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GE.MyLearning.Web\bin\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=4.1.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GE.MyLearning.Web\bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonClass.cs" />
+    <Compile Include="CourseKnowledgePoints.cs" />
+    <Compile Include="CourseRelation.cs" />
+    <Compile Include="Courses_Extend.cs" />
+    <Compile Include="CoursewareEdit_Extend.cs" />
+    <Compile Include="Coursewares.cs" />
+    <Compile Include="Groups.cs" />
+    <Compile Include="InstituteCoursesProvider.cs" />
+    <Compile Include="Institutes.cs" />
+    <Compile Include="LoginLog.cs" />
+    <Compile Include="Menus.cs" />
+    <Compile Include="Notices.cs" />
+    <Compile Include="Permission.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RolePermission.cs" />
+    <Compile Include="Roles.cs" />
+    <Compile Include="Rules.cs" />
+    <Compile Include="RuleStyleProvider.cs" />
+    <Compile Include="StudentCourseRelation.cs" />
+    <Compile Include="Students.cs" />
+    <Compile Include="SysLog.cs" />
+    <Compile Include="TrainingLogProvider.cs" />
+    <Compile Include="TreeList.cs" />
+    <Compile Include="UnzipClass.cs" />
+    <Compile Include="UserGroup.cs" />
+    <Compile Include="UserInfo.cs" />
+    <Compile Include="UserRole.cs" />
+    <Compile Include="Utility\ConfigInfo.cs" />
+    <Compile Include="Utility\DataToPDF.cs" />
+    <Compile Include="Utility\DbHelperSQL.cs" />
+    <Compile Include="Utility\EmailEngine.cs" />
+    <Compile Include="Utility\MailMessage.cs" />
+    <Compile Include="Utility\SqlHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GE.MyLearning.DL.SqlClient\GE.MyLearning.DL.SqlClient.csproj">
+      <Project>{8996A7B4-57D3-440B-A545-A701844B8C4A}</Project>
+      <Name>GE.MyLearning.DL.SqlClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GE.MyLearning.DL\GE.MyLearning.DL.csproj">
+      <Project>{041C1BBE-0BFB-4D45-8125-9AB0BBC09A92}</Project>
+      <Name>GE.MyLearning.DL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

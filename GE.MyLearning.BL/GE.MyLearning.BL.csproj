@@ -1,0 +1,901 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20E43088-4618-4F4A-B8AD-FC31B50D94CD}</ProjectGuid>
+    <ProjectType>Local</ProjectType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OutputType>Library</OutputType>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>GE.MyLearning.BL</AssemblyName>
+    <AssemblyOriginatorKeyFile>..\GE.MyLearning.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>false</SignAssembly>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <RootNamespace>GE.MyLearning.BL</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <SccProjectName>"%24/GE-VirtualUniversity/VirtualUniversity.root/VirtualUniversity", PPCAAAAA</SccProjectName>
+    <SccLocalPath>..</SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>GE.MyLearning.BL.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>GE.MyLearning.BL.xml</DocumentationFile>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'GenerateDebug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>GE.MyLearning.BL.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.EnterpriseLibrary.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <!-- Custom code folder: c:\NetTiers\learningjf\GE.MyLearning.BL\App_Code -->
+  <ItemGroup>
+    <Compile Include="App_Code\**\*.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <!-- Include any user files -->
+  <ItemGroup>
+    <Compile Include="**\*.user.*" Exclude="**\*.csproj.user;**\.svn\**">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Views\EvlVLearningRecordCsv.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\EvlVLearningRecordCsvBase.generated.cs">
+      <DependentUpon>EvlVLearningRecordCsv.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\EvlVLearningRecordExcel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\EvlVLearningRecordExcelBase.generated.cs">
+      <DependentUpon>EvlVLearningRecordExcel.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\EvlVScore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\EvlVScoreBase.generated.cs">
+      <DependentUpon>EvlVScore.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwDegreeCourses.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwDegreeCoursesBase.generated.cs">
+      <DependentUpon>VwDegreeCourses.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwEvlUser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwEvlUserBase.generated.cs">
+      <DependentUpon>VwEvlUser.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwInstituteDegreeCourses.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwInstituteDegreeCoursesBase.generated.cs">
+      <DependentUpon>VwInstituteDegreeCourses.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwInstituteDegrees.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwInstituteDegreesBase.generated.cs">
+      <DependentUpon>VwInstituteDegrees.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwInstituteDegreeStudents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwInstituteDegreeStudentsBase.generated.cs">
+      <DependentUpon>VwInstituteDegreeStudents.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwInstitutes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwInstitutesBase.generated.cs">
+      <DependentUpon>VwInstitutes.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwMenuPermission.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwMenuPermissionBase.generated.cs">
+      <DependentUpon>VwMenuPermission.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwRolePermission.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwRolePermissionBase.generated.cs">
+      <DependentUpon>VwRolePermission.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwRoles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwRolesBase.generated.cs">
+      <DependentUpon>VwRoles.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwStudentCourseRelation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwStudentCourseRelationBase.generated.cs">
+      <DependentUpon>VwStudentCourseRelation.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwStudents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwStudentsBase.generated.cs">
+      <DependentUpon>VwStudents.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwTrainingUser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwTrainingUserBase.generated.cs">
+      <DependentUpon>VwTrainingUser.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwTrainingUserLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwTrainingUserLogBase.generated.cs">
+      <DependentUpon>VwTrainingUserLog.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwUserGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwUserGroupBase.generated.cs">
+      <DependentUpon>VwUserGroup.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwUserGroupPermission.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwUserGroupPermissionBase.generated.cs">
+      <DependentUpon>VwUserGroupPermission.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwUserRole.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VwUserRoleBase.generated.cs">
+      <DependentUpon>VwUserRole.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CallRoles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CallRolesBase.generated.cs">
+      <DependentUpon>CallRoles.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ICallRoles.cs">
+      <DependentUpon>CallRoles.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TrainingLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TrainingLogBase.generated.cs">
+      <DependentUpon>TrainingLog.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ITrainingLog.cs">
+      <DependentUpon>TrainingLog.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TrainingUser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TrainingUserBase.generated.cs">
+      <DependentUpon>TrainingUser.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ITrainingUser.cs">
+      <DependentUpon>TrainingUser.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserGroupBase.generated.cs">
+      <DependentUpon>UserGroup.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IUserGroup.cs">
+      <DependentUpon>UserGroup.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserInfoBase.generated.cs">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IUserInfo.cs">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SysLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SysLogBase.generated.cs">
+      <DependentUpon>SysLog.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ISysLog.cs">
+      <DependentUpon>SysLog.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Students.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StudentsBase.generated.cs">
+      <DependentUpon>Students.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IStudents.cs">
+      <DependentUpon>Students.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Permission.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PermissionBase.generated.cs">
+      <DependentUpon>Permission.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IPermission.cs">
+      <DependentUpon>Permission.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RolePermission.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RolePermissionBase.generated.cs">
+      <DependentUpon>RolePermission.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IRolePermission.cs">
+      <DependentUpon>RolePermission.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Roles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RolesBase.generated.cs">
+      <DependentUpon>Roles.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IRoles.cs">
+      <DependentUpon>Roles.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StudentCourseRelation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StudentCourseRelationBase.generated.cs">
+      <DependentUpon>StudentCourseRelation.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IStudentCourseRelation.cs">
+      <DependentUpon>StudentCourseRelation.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserRole.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserRoleBase.generated.cs">
+      <DependentUpon>UserRole.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IUserRole.cs">
+      <DependentUpon>UserRole.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VuArticle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VuArticleBase.generated.cs">
+      <DependentUpon>VuArticle.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IVuArticle.cs">
+      <DependentUpon>VuArticle.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VuGroupList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VuGroupListBase.generated.cs">
+      <DependentUpon>VuGroupList.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IVuGroupList.cs">
+      <DependentUpon>VuGroupList.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VuNewpost.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VuNewpostBase.generated.cs">
+      <DependentUpon>VuNewpost.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IVuNewpost.cs">
+      <DependentUpon>VuNewpost.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VuRenyuan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VuRenyuanBase.generated.cs">
+      <DependentUpon>VuRenyuan.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IVuRenyuan.cs">
+      <DependentUpon>VuRenyuan.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VuReplypost.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VuReplypostBase.generated.cs">
+      <DependentUpon>VuReplypost.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IVuReplypost.cs">
+      <DependentUpon>VuReplypost.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VuGroupItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VuGroupItemBase.generated.cs">
+      <DependentUpon>VuGroupItem.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IVuGroupItem.cs">
+      <DependentUpon>VuGroupItem.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VuFriendship.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VuFriendshipBase.generated.cs">
+      <DependentUpon>VuFriendship.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IVuFriendship.cs">
+      <DependentUpon>VuFriendship.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VuCatogary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VuCatogaryBase.generated.cs">
+      <DependentUpon>VuCatogary.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IVuCatogary.cs">
+      <DependentUpon>VuCatogary.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VuCatogaryExperts.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VuCatogaryExpertsBase.generated.cs">
+      <DependentUpon>VuCatogaryExperts.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IVuCatogaryExperts.cs">
+      <DependentUpon>VuCatogaryExperts.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VuCatogaryManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VuCatogaryManagerBase.generated.cs">
+      <DependentUpon>VuCatogaryManager.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IVuCatogaryManager.cs">
+      <DependentUpon>VuCatogaryManager.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VuClassInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VuClassInfoBase.generated.cs">
+      <DependentUpon>VuClassInfo.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IVuClassInfo.cs">
+      <DependentUpon>VuClassInfo.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Notices.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NoticesBase.generated.cs">
+      <DependentUpon>Notices.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="INotices.cs">
+      <DependentUpon>Notices.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Menus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MenusBase.generated.cs">
+      <DependentUpon>Menus.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMenus.cs">
+      <DependentUpon>Menus.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LoginLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LoginLogBase.generated.cs">
+      <DependentUpon>LoginLog.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ILoginLog.cs">
+      <DependentUpon>LoginLog.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Department.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartmentBase.generated.cs">
+      <DependentUpon>Department.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IDepartment.cs">
+      <DependentUpon>Department.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EvlAssessment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EvlAssessmentBase.generated.cs">
+      <DependentUpon>EvlAssessment.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEvlAssessment.cs">
+      <DependentUpon>EvlAssessment.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EvlBehavior.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EvlBehaviorBase.generated.cs">
+      <DependentUpon>EvlBehavior.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEvlBehavior.cs">
+      <DependentUpon>EvlBehavior.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EvlBehaviordescription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EvlBehaviordescriptionBase.generated.cs">
+      <DependentUpon>EvlBehaviordescription.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEvlBehaviordescription.cs">
+      <DependentUpon>EvlBehaviordescription.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Degrees.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DegreesBase.generated.cs">
+      <DependentUpon>Degrees.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IDegrees.cs">
+      <DependentUpon>Degrees.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DegreeCourses.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DegreeCoursesBase.generated.cs">
+      <DependentUpon>DegreeCourses.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IDegreeCourses.cs">
+      <DependentUpon>DegreeCourses.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CourseIdea.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CourseIdeaBase.generated.cs">
+      <DependentUpon>CourseIdea.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ICourseIdea.cs">
+      <DependentUpon>CourseIdea.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Courses.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoursesBase.generated.cs">
+      <DependentUpon>Courses.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ICourses.cs">
+      <DependentUpon>Courses.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Coursewares.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoursewaresBase.generated.cs">
+      <DependentUpon>Coursewares.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ICoursewares.cs">
+      <DependentUpon>Coursewares.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DegreeApply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DegreeApplyBase.generated.cs">
+      <DependentUpon>DegreeApply.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IDegreeApply.cs">
+      <DependentUpon>DegreeApply.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EvlCatalog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EvlCatalogBase.generated.cs">
+      <DependentUpon>EvlCatalog.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEvlCatalog.cs">
+      <DependentUpon>EvlCatalog.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EvlCompetencyScoreDept.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EvlCompetencyScoreDeptBase.generated.cs">
+      <DependentUpon>EvlCompetencyScoreDept.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEvlCompetencyScoreDept.cs">
+      <DependentUpon>EvlCompetencyScoreDept.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Groups.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GroupsBase.generated.cs">
+      <DependentUpon>Groups.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IGroups.cs">
+      <DependentUpon>Groups.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Institutes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InstitutesBase.generated.cs">
+      <DependentUpon>Institutes.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IInstitutes.cs">
+      <DependentUpon>Institutes.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LearningRecordCsv.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LearningRecordCsvBase.generated.cs">
+      <DependentUpon>LearningRecordCsv.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ILearningRecordCsv.cs">
+      <DependentUpon>LearningRecordCsv.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LearningRecordExcel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LearningRecordExcelBase.generated.cs">
+      <DependentUpon>LearningRecordExcel.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ILearningRecordExcel.cs">
+      <DependentUpon>LearningRecordExcel.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EvlUsertype.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EvlUsertypeBase.generated.cs">
+      <DependentUpon>EvlUsertype.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEvlUsertype.cs">
+      <DependentUpon>EvlUsertype.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EvlUser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EvlUserBase.generated.cs">
+      <DependentUpon>EvlUser.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEvlUser.cs">
+      <DependentUpon>EvlUser.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EvlGuestevl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EvlGuestevlBase.generated.cs">
+      <DependentUpon>EvlGuestevl.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEvlGuestevl.cs">
+      <DependentUpon>EvlGuestevl.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EvlModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EvlModelBase.generated.cs">
+      <DependentUpon>EvlModel.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEvlModel.cs">
+      <DependentUpon>EvlModel.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EvlScore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EvlScoreBase.generated.cs">
+      <DependentUpon>EvlScore.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEvlScore.cs">
+      <DependentUpon>EvlScore.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EvlScoredescription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EvlScoredescriptionBase.generated.cs">
+      <DependentUpon>EvlScoredescription.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEvlScoredescription.cs">
+      <DependentUpon>EvlScoredescription.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VuRights.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VuRightsBase.generated.cs">
+      <DependentUpon>VuRights.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IVuRights.cs">
+      <DependentUpon>VuRights.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEntityId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEntityKey.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityBaseCore.generated.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>EntityBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntityKeyBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityKeyBaseCore.generated.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>EntityKeyBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityPropertyComparer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEntityFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityFactoryBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityLocator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEntityCacheItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GenericTypeConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validation\PropertyValidator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validation\PropertyValidatorValueAccess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validation\PropertyValidatorValueAccessBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

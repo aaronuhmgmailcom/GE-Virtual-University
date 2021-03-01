@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GE.MyLearning.BL.Interface", "GE.MyLearning.BL.Interface\GE.MyLearning.BL.Interface.csproj", "{B8E7E62A-B078-4FB4-9721-8502885D86E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GE.MyLearning.Web", "GE.MyLearning.Web\GE.MyLearning.Web.csproj", "{4C505300-E21D-4A1F-AB82-51EC31CC02A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GE.MyLearning.BL", "GE.MyLearning.BL\GE.MyLearning.BL.csproj", "{20E43088-4618-4F4A-B8AD-FC31B50D94CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GE.MyLearning.DL", "GE.MyLearning.DL\GE.MyLearning.DL.csproj", "{041C1BBE-0BFB-4D45-8125-9AB0BBC09A92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GE.MyLearning.DL.SqlClient", "GE.MyLearning.DL.SqlClient\GE.MyLearning.DL.SqlClient.csproj", "{8996A7B4-57D3-440B-A545-A701844B8C4A}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 6
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = GE.MyLearning.BL.Interface\\GE.MyLearning.BL.Interface.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = GE.MyLearning.BL.Interface\\
+		SccProjectUniqueName2 = GE.MyLearning.BL\\GE.MyLearning.BL.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = GE.MyLearning.BL\\
+		SccProjectUniqueName3 = GE.MyLearning.DL.SqlClient\\GE.MyLearning.DL.SqlClient.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = GE.MyLearning.DL.SqlClient\\
+		SccProjectUniqueName4 = GE.MyLearning.DL\\GE.MyLearning.DL.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = GE.MyLearning.DL\\
+		SccProjectUniqueName5 = GE.MyLearning.Web\\GE.MyLearning.Web.csproj
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = GE.MyLearning.Web\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		GenerateDebug|Any CPU = GenerateDebug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8E7E62A-B078-4FB4-9721-8502885D86E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8E7E62A-B078-4FB4-9721-8502885D86E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8E7E62A-B078-4FB4-9721-8502885D86E1}.GenerateDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8E7E62A-B078-4FB4-9721-8502885D86E1}.GenerateDebug|Any CPU.Build.0 = Debug|Any CPU
+		{B8E7E62A-B078-4FB4-9721-8502885D86E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8E7E62A-B078-4FB4-9721-8502885D86E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C505300-E21D-4A1F-AB82-51EC31CC02A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C505300-E21D-4A1F-AB82-51EC31CC02A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C505300-E21D-4A1F-AB82-51EC31CC02A8}.GenerateDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C505300-E21D-4A1F-AB82-51EC31CC02A8}.GenerateDebug|Any CPU.Build.0 = Debug|Any CPU
+		{4C505300-E21D-4A1F-AB82-51EC31CC02A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C505300-E21D-4A1F-AB82-51EC31CC02A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20E43088-4618-4F4A-B8AD-FC31B50D94CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20E43088-4618-4F4A-B8AD-FC31B50D94CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20E43088-4618-4F4A-B8AD-FC31B50D94CD}.GenerateDebug|Any CPU.ActiveCfg = GenerateDebug|Any CPU
+		{20E43088-4618-4F4A-B8AD-FC31B50D94CD}.GenerateDebug|Any CPU.Build.0 = GenerateDebug|Any CPU
+		{20E43088-4618-4F4A-B8AD-FC31B50D94CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20E43088-4618-4F4A-B8AD-FC31B50D94CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{041C1BBE-0BFB-4D45-8125-9AB0BBC09A92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{041C1BBE-0BFB-4D45-8125-9AB0BBC09A92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{041C1BBE-0BFB-4D45-8125-9AB0BBC09A92}.GenerateDebug|Any CPU.ActiveCfg = GenerateDebug|Any CPU
+		{041C1BBE-0BFB-4D45-8125-9AB0BBC09A92}.GenerateDebug|Any CPU.Build.0 = GenerateDebug|Any CPU
+		{041C1BBE-0BFB-4D45-8125-9AB0BBC09A92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{041C1BBE-0BFB-4D45-8125-9AB0BBC09A92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8996A7B4-57D3-440B-A545-A701844B8C4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8996A7B4-57D3-440B-A545-A701844B8C4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8996A7B4-57D3-440B-A545-A701844B8C4A}.GenerateDebug|Any CPU.ActiveCfg = GenerateDebug|Any CPU
+		{8996A7B4-57D3-440B-A545-A701844B8C4A}.GenerateDebug|Any CPU.Build.0 = GenerateDebug|Any CPU
+		{8996A7B4-57D3-440B-A545-A701844B8C4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8996A7B4-57D3-440B-A545-A701844B8C4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
